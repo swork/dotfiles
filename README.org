@@ -1,0 +1,5 @@
+This is [[https://github.com/plexus/dotfiles/][someone else's]] personal machine setup scaffolding cloned off github
+and cherry-picked for my own purposes.
+
+Steve Work
+[2020-11-12 Thu]

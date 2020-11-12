@@ -17,7 +17,7 @@ print_recursing() {
 }
 
 dotfiles() {
-    find `dotdir` -maxdepth 1 -name '.*' -not -name '.git' -printf '%f\n'
+    find `dotdir` -maxdepth 1 -name '.*' -not -name '.git' -print|xargs basename
 }
 
 dotdir() {
@@ -60,7 +60,7 @@ handle_directory() {
     local dir=$1;
     print_recursing "recursing into " $dir
     mkdir -p "$HOME/$dir"
-    for file in $(find `dotdir`/$dir -maxdepth 1 -not -wholename `dotdir`/$dir -printf '%f\n'); do
+    for file in $(find `dotdir`/$dir -maxdepth 1 -not -wholename `dotdir`/$dir -print|xargs basename); do
         handle "${dir}/${file}"
     done
 }

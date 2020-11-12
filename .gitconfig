@@ -1,6 +1,6 @@
 [user]
-	name = Arne Brasseur
-	email = arne@arnebrasseur.net
+	name = Steve Work
+	email = steve@work.renlabs.com
 
 [color]
 	ui = auto
@@ -25,17 +25,17 @@
 	default = simple        # Only push the current branch instead of all matching branches when doing a plain "git push"
 
 [include]
-	path = .gitsecrets
+#	path = .gitsecrets
 
 [diff]
 	renames = copies
 	mnemonicprefix = true   # Use mnemonic prefixes (index, work tree, commit, object) instead of the standard a and b notation.
 
 [branch]
-	autosetupmerge = true   # When branching off a remote branch, automatically let the local branch track the remote branch.
+#	autosetupmerge = true   # When branching off a remote branch, automatically let the local branch track the remote branch.
 
 [rerere]
-	enabled = false          # Enable the recording of resolved conflicts, so that identical hunks can be resolved automatically later on.
+#	enabled = false          # Enable the recording of resolved conflicts, so that identical hunks can be resolved automatically later on.
 
 [merge]
 	stat = true             # Always show a diffstat at the end of a merge
@@ -49,4 +49,4 @@
 [hub]
 	protocol = ssh
 [init]
-	templateDir = /home/arne/github/dotfiles/git/template
+#	templateDir = /home/arne/github/dotfiles/git/template
